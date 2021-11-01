@@ -10,3 +10,7 @@ As part of a Secured Globe, Inc. project with Freedom Scientific, Inc., the crea
 
 **Download Link**
 https://gograb.site/SG_PDF2TXT.exe
+
+## Unit tests
+
+`Tests/pdf2text.test.js` checks the README project identity. Run `node Tests/pdf2text.test.js`.
