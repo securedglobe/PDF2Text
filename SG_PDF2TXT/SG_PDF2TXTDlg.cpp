@@ -139,9 +139,11 @@ void CCSGPDF2TXTDlg::OnBnClickedBtnConvert()
 {
 	// update data from ui
 	UpdateData(TRUE);
-
+	setlocale(LC_ALL, "UTF-8") ;
 	// convert unicode path to utf8 path
 	wstring w_wszPath = m_szPDFPath.GetBuffer();
+	wstring TargetPath=w_wszPath.substr(0,w_wszPath.find_last_of(L'.'))+L".txt";
+
 	m_szPDFPath.ReleaseBuffer();
 	int w_nLen = WideCharToMultiByte(CP_UTF8, 0, w_wszPath.data(), -1, NULL, NULL, NULL, NULL);
 	char* w_pszPath = new char[w_nLen + 1];
@@ -149,11 +151,10 @@ void CCSGPDF2TXTDlg::OnBnClickedBtnConvert()
 	WideCharToMultiByte(CP_UTF8, 0, w_wszPath.data(), w_wszPath.size(), w_pszPath, w_nLen, NULL, NULL);
 	string w_szPath(w_pszPath);
 	delete[] w_pszPath;
-	string w_szOutPath = w_szPath + ".txt";
+	string w_szOutPath=w_szPath.substr(0,w_szPath.find_last_of('.'))+".txt";
 
 	// process pdf2txt
 	pdf2txt(w_szPath, w_szOutPath);
-	wstring target(w_szOutPath.begin(), w_szOutPath.end());
-	ShellExecute(GetForegroundWindow()->GetSafeHwnd(), L"OPEN", target.c_str(), NULL, NULL, 1);
+	ShellExecute(GetForegroundWindow()->GetSafeHwnd(), L"OPEN", TargetPath.c_str(), NULL, NULL, 1);
 	MessageBox(_T("Completed"), _T("pdf2txt"), MB_ICONINFORMATION | MB_OK);
 }

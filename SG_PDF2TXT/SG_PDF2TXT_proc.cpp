@@ -98,6 +98,9 @@ int pdf2txt(std::string p_szPDFFilePath, std::string p_szTxtFilePath)
 		globalParams->setErrQuiet(quiet);
 	}
 
+	// Set UNICODE support
+	globalParams->setTextEncoding("UTF-8");
+
 	// get mapping to output encoding
 	if (!(uMap = globalParams->getTextEncoding()))
 	{

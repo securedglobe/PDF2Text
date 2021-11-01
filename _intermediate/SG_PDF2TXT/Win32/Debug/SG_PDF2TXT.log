@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(402,5): warning MSB8038: Spectre mitigation is enabled but Spectre mitigated libraries are not found.  Verify that the Visual Studio Workload includes the Spectre mitigated libraries.  See https://aka.ms/Ofhn4c for more information.
+  SG_PDF2TXTDlg.cpp
+LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/FORCE' specification
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void * __cdecl operator new(unsigned int)" (??2@YAPAXI@Z) already defined in LIBCMTD.lib(new_scalar.obj); second definition ignored
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void __cdecl operator delete(void *)" (??3@YAXPAX@Z) already defined in LIBCMTD.lib(delete_scalar.obj); second definition ignored
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void * __cdecl operator new[](unsigned int)" (??_U@YAPAXI@Z) already defined in LIBCMTD.lib(new_array.obj); second definition ignored
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void __cdecl operator delete[](void *)" (??_V@YAXPAX@Z) already defined in LIBCMTD.lib(delete_array.obj); second definition ignored
+C:\Users\micha\Source\Repos\PDF2Text2\bin\Win32\Debug\SG_PDF2TXT.exe : warning LNK4088: image being generated due to /FORCE option; image may not run
+  SG_PDF2TXT.vcxproj -> C:\Users\micha\Source\Repos\PDF2Text2\bin\Win32\Debug\SG_PDF2TXT.exe

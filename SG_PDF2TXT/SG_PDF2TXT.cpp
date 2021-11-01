@@ -4,6 +4,7 @@ SG_PDF2TXT
 (c) 2021 Secured Globe, Inc.
 
 version 1.0	Obtober, 2021
+
 */
 
 #include "pch.h"
