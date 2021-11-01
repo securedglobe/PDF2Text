@@ -418,6 +418,7 @@
     <ResourceCompile Include="SG_PDF2TXT.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\LICENSE" />
     <None Include="res\SG_PDF2TXT.rc2" />
   </ItemGroup>
   <ItemGroup>

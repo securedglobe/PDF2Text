@@ -595,6 +595,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\SG_PDF2TXT.rc2" />
+    <None Include="..\LICENSE" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SG_PDF2TXT.rc" />
